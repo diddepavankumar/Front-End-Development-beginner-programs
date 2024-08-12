@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Job Registration Form</title>
+</head>
+<body>
+    <div class="container" style="background-color: rgb(17, 157, 41);">
+        <h2>Job Registration Form</h2>
+        <form action="/submit-registration" method="post">
+            <div class="form-group">
+                <label for="fullName"><span class="details">Full Name:</span></label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><span class="details">Email Address:</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone"><span class="details">Phone Number:</span></label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address"><span class="details">Address:</span></label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="education"><span class="details">Highest Level of Education:</span></label>
+                <select id="education" name="education" required>
+                    <option value=""><span class="details">Select</span></option>
+                    <option value="highschool"><span class="details">High School</span></option>
+                    <option value="bachelor"><span class="details">Bachelor's Degree</span></option>
+                    <option value="master"><span class="details">Master's Degree</span></option>
+                    <option value="doctorate"><span class="details">Doctorate</span></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience"><span class="details">Years of Experience:</span></label>
+                <input type="number" id="experience" name="experience" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="resume"><span class="details">Upload Resume:</span></label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+            <div class="form-group">
+                <button type="submit"><span class="details">Register</span></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
