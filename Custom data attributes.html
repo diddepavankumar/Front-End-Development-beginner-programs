@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Ronaldo</title>
+    <img src = "C:\Users\91960\Downloads\Flag_of_Portugal.svg.png" alt = "Portugal" width = "300" height ="200" align = "right">
+    <img src = "C:\Users\91960\Downloads\real madrid.jpeg" alt = "Portugal" width = "300" height ="200" align = "left">
+    
+    <style>
+        body {
+            font-family: Tahoma, "Trebuchet MS", sans-serif;
+            background-color: #0c0b0b;
+            color: #030303;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: hwb(59 0% 20%);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 50%;
+            border-radius: 8px;
+        }
+        .details {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .details span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Krishna Ronaldo</h1>
+        <div class="image-container">
+            <img src="C:\Users\91960\Downloads\ronaldo image.jpeg" alt="Cristiano Ronaldo" />
+        </div>
+        <div class="details" data-name="Krishna Ronaldo" data-birth="05-02-1985" data-teamsplayed="Portugal, Real Madrid, Al nassr" data-profession="Footballer">
+            <p><span>Name:</span> <span id="name"></span></p>
+            <p><span>Birth Date:</span> <span id="birth"></span></p>
+            <p><span>Teams Played:</span> <span id="teamsplayed"></span></p>
+            <p><span>Profession:</span> <span id="profession"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Fetch custom data attributes
+        const details = document.querySelector('.details');
+        document.getElementById('name').innerText = details.dataset.name;
+        document.getElementById('birth').innerText = details.dataset.birth;
+        document.getElementById('teamsplayed').innerText = details.dataset.teamsplayed;
+        document.getElementById('profession').innerText = details.dataset.profession;
+    </script>
+</body>
+</html>
